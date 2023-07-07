@@ -32,6 +32,7 @@ app.get("/compose" , (req,res)=>{
   res.render("compose");
 })
 
+
 app.get("/posts/:postName" , (req,res)=>{
   const reqPostTitle = lodash.lowerCase(req.params.postName);
   for(var i=0;i<posts.length;i++)
